@@ -1,8 +1,6 @@
-FROM ubuntu
+FROM alpine
 MAINTAINER John Sanabria - john.sanabria@correounivalle.edu.co
-RUN apt-get update
-RUN apt-get -y install build-essential git python-dev python-pip python-virtualenv
-RUN pip install --upgrade pip
+RUN apk add --no-cache git build-base python python-dev py-pip && pip install virtualenv && rm -rf /var/cache/apk/*
 RUN mkdir /source
 WORKDIR /source
 RUN git clone https://github.com/josanabr/autotune.git
