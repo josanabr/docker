@@ -11,4 +11,12 @@ Una vez lo tenga instalado puede ejecutar el siguiente comando para crear su con
 docker build -t autotune .
 ```
 
-* [run.sh](run.sh) Este archivo le permitirá correr el contenedor de la siguiente manera `./run.sh example_runs.json` donde el archivo .json tiene la configuración de la ejecución que se desea hacer.
+* [run.sh](run.sh) Este archivo le permitirá correr el contenedor de la siguiente manera<sup>[1](#dockerinstalado)</sup>.
+
+```
+./run.sh josanabr/autotune example_runs.json 
+```
+
+donde el archivo .json tiene la configuración de la ejecución que se desea hacer.
+
+<a name="dockerinstalado">1</a>: se asume que usted ya tiene instalado Docker en su computador.
