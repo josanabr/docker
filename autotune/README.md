@@ -19,6 +19,10 @@ Este archivo debe estar en el directorio donde se ejecuta el script.
 
 En caso de tener problemas con la ejecución del script valide que este tenga permisos de ejecución o ejecute `chmod +x run.sh` para garantizar que el script tenga permisos de ejecución.
 
+* [submit.condor](submit.condor) Este archivo permite la ejecución del contenedor de autotune a través de HTCondor.
+
+* [example_runs.json](example_runs.json) Archivo .json con datos de prueba para ejecutar en el contenedor.
+
 ---
 
 <a name="dockerinstalado">[1]</a> se asume que usted ya tiene instalado Docker en su computador.

@@ -1,0 +1,11 @@
+universe                = vanilla
+transfer_executable     = TRUE
+executable              = run.sh
+arguments               = josanabr/autotune example_runs.json
+should_transfer_files   = YES
+transfer_input_files    = example_runs.json
+when_to_transfer_output = ON_EXIT_OR_EVICT
+output                  = autotune.$(cluster).$(process).out
+error                   = autotune.$(cluster).$(process).err
+log                     = autotune.$(cluster).log
+queue
