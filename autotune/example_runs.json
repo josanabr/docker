@@ -3,7 +3,7 @@
         "memory": 2048,
         "executable": "../ex/bin/ex1",
         "ems": "../ex/ems",
-        "folder": "../../runs/{-d}/{-p}/{-t_delete}",
+        "folder": "/run/{-d}/{-p}/{-t_delete}",
         "filename": "out_raw",
         "queue": "ashley",
         "wallhours": "200",
