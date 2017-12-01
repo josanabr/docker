@@ -1,0 +1,16 @@
+FROM ubuntu
+MAINTAINER John Sanabria - john.sanabria@correounivalle.edu.co
+RUN apt-get update
+RUN apt-get -y install build-essential git python-dev python-pip python-virtualenv
+RUN pip install --upgrade pip
+RUN mkdir /source
+WORKDIR /source
+# Descargar el codigo desde Internet
+COPY autotune-2.0.1.tgz .
+RUN tar xfz autotune-2.0.1.tgz 
+RUN apt-get install wget
+WORKDIR /source/autotune-2.0.1
+RUN make install
+WORKDIR /run
+#WORKDIR /source/autotune-2.0.1/process
+#CMD ["sh", "-c", "./run.py --input ${jsonfile}"]
